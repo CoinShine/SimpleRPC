@@ -1,0 +1,12 @@
+.DS_store
+.idea
+target/
+*.iml
+/.settings/
+/.classpath
+/.project
+*COnfigCenter_*
+bash.exe
+bash.exe.stackdump
+/target/
+package-lock.json
