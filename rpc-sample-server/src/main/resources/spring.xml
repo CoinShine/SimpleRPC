@@ -7,7 +7,7 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.simple.rpc.sample.server"/>
+    <context:component-scan base-package="sample.server"/>
 
     <context:property-placeholder location="classpath:rpc.properties"/>
 
@@ -15,7 +15,7 @@
         <constructor-arg name="registryAddress" value="${registry.address}"/>
     </bean>
 
-    <bean id="rpcServer" class="com.simple.rpc.server.RpcServer">
+    <bean id="rpcServer" class="server.RpcServer">
         <constructor-arg name="serverAddress" value="${server.address}"/>
         <constructor-arg name="serviceRegistry" ref="serviceRegistry"/>
     </bean>
